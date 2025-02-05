@@ -33,6 +33,7 @@ function UseStateChallenge()
 
     const resetFunction = () =>{
         updateCount(0);
+        updateValue(0);
     }
 
     return(
