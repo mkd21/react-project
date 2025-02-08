@@ -1,0 +1,25 @@
+
+@media (min-width : 1500px)
+{
+    .parentContainer 
+    {
+        background-color: yellowgreen;
+        display : flex;
+        flex-wrap : wrap;
+    }
+
+    .cardParentContainer
+    {
+        background-color: greenyellow;
+        border : 1px solid black;
+        margin : 3rem;
+        width: 16rem;
+        /* height: 17rem; */
+    }
+
+    .pokemonNameContainer 
+    {
+        width: 10rem;
+        margin: auto;
+    }
+}
