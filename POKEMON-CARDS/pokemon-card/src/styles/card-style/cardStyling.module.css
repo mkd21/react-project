@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 @media (min-width : 300px) and (max-width : 500px)
 {
   .parentContainer 
@@ -289,8 +289,6 @@
       line-height: 2;
   }
 }
-=======
->>>>>>> 0245bf045e58944e25244ebd965aad9414416a2c
 
 @media (min-width : 1500px)
 {
@@ -386,5 +384,4 @@
         margin-right: 1rem;
         line-height: 2;
     }
-
 }
