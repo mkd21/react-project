@@ -4,7 +4,11 @@
 const fetchData = async() =>{
 
     // phase 1 
+<<<<<<< HEAD
     const receivedRes = await fetch("https://pokeapi.co/api/v2/pokemon?limit=32");
+=======
+    const receivedRes = await fetch("https://pokeapi.co/api/v2/pokemon");
+>>>>>>> 0245bf045e58944e25244ebd965aad9414416a2c
     const res = await receivedRes.json();
 
 
