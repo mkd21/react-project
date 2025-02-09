@@ -3,23 +3,95 @@
 {
     .parentContainer 
     {
-        background-color: yellowgreen;
+        /* background-color: yellowgreen; */
         display : flex;
         flex-wrap : wrap;
+        justify-content: center;
     }
 
     .cardParentContainer
     {
-        background-color: greenyellow;
-        border : 1px solid black;
         margin : 3rem;
         width: 16rem;
-        /* height: 17rem; */
+        background: #07182E;
+        position: relative;
+        display: flex;
+        place-content: center;
+        place-items: center;
+        overflow: hidden;
+        border-radius: 20px;
     }
+    .cardParentContainer::before {
+        content: '';
+        position: absolute;
+        width: 100px;
+        background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(255, 48, 255));
+        height: 130%;
+        animation: rotBGimg 3s linear infinite;
+        transition: all 0.2s linear;
+      }
+      
+      @keyframes rotBGimg {
+        from {
+          transform: rotate(0deg);
+        }
+      
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      
+      .cardParentContainer::after {
+        content: '';
+        position: absolute;
+        background: #07182E;;
+        inset: 5px;
+        border-radius: 15px;
+      }  
 
     .pokemonNameContainer 
     {
         width: 10rem;
         margin: auto;
     }
+
+    .eachCardContentsHolder
+    {
+        z-index: 1;
+        margin-left : 0.5rem;
+        margin-right : 0.5rem;
+    }
+    .pokemonImage
+    {
+        /* background-color : violet; */
+        width : 10rem;
+        margin : auto;
+        margin-top : 3rem;
+    }
+
+    .pokemonTypeHolder 
+    {
+        background-color : green;
+        display : flex;
+        justify-content : space-around;
+        border-radius : 23px;
+        color : white;
+        font-weight : bolder;
+        margin-bottom : 2rem;
+    }
+    .detailsOfPokemon
+    {
+        display : flex;
+        flex-wrap : wrap;
+        justify-content : space-around;
+        color : white;
+        font-weight : bolder;
+        margin-bottom : 2rem;
+    }
+    .detailsOfPokemon section
+    {
+        margin-right: 1rem;
+        line-height: 2;
+    }
+
 }

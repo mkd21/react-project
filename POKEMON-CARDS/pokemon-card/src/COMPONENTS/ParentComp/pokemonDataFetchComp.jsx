@@ -31,8 +31,7 @@ function ParentComp()
         processData();
     } , []);
 
-    console.log(data);
-
+    
     // when data is being fetched 
     if(loading)
     {
