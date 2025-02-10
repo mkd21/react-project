@@ -3,7 +3,7 @@
 {
   .parentContainer 
   {
-      background-color: yellowgreen;
+      /* background-color: yellowgreen; */
       display : flex;
       flex-wrap : wrap;
       justify-content: center;
@@ -103,7 +103,7 @@
 {
   .parentContainer 
   {
-      background-color: yellowgreen;
+      /* background-color: yellowgreen; */
       display : flex;
       flex-wrap : wrap;
       justify-content: center;

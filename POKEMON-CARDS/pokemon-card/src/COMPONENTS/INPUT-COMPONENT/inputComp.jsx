@@ -1,10 +1,25 @@
 
-export const InputComponent = () =>{
+import { useEffect, useState } from "react";
+import inputStyle from "../../styles/input-style/inputStyle.module.css";
+
+
+export const InputComponent = ({filterPokemon}) =>{
+
+    const [currentValue , updateValue] = useState("");
+
+    const handleOnChange = (receivedText) =>{
+        updateValue(receivedText);
+        // filterPokemon(currentValue);
+    }
+
+    useEffect( () =>{
+        filterPokemon(currentValue);
+    } , [currentValue]);
 
     return(
 
-        <div>
-            <input type="text" />
+        <div className={inputStyle.inputSectionHolder} >
+            <input type="text" placeholder="Search your favourite pokemon.." value={currentValue} onChange={(e) => handleOnChange(e.target.value)} />
         </div>
     );
 }

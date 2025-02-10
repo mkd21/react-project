@@ -1,0 +1,54 @@
+
+@media (min-width : 300px) and (max-width : 500px)
+{
+    .no-pokemon-card-holder
+    {
+        text-align: center;
+        font-size: 3rem;
+        text-shadow: -3px 7px 10px rebeccapurple;
+    }
+
+    .no-card-button 
+    {
+        width: 14rem;
+        padding: 3rem;
+        border-radius: 41px;
+        border: none;
+        font-weight: bolder;
+        letter-spacing: 1px;
+    }
+
+    .no-card-button:hover
+    {
+        cursor: pointer;
+        background-color: red;
+        color: white;
+    }
+}
+
+@media (min-width : 1500px)
+{
+    .no-pokemon-card-holder
+    {
+        text-align: center;
+        font-size: 3rem;
+        text-shadow: -3px 7px 10px rebeccapurple;
+    }
+
+    .no-card-button 
+    {
+        width: 14rem;
+        padding: 3rem;
+        border-radius: 41px;
+        border: none;
+        font-weight: bolder;
+        letter-spacing: 1px;
+    }
+
+    .no-card-button:hover
+    {
+        cursor: pointer;
+        background-color: red;
+        color: white;
+    }
+}
