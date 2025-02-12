@@ -4,18 +4,77 @@
     .no-pokemon-card-holder
     {
         text-align: center;
-        font-size: 3rem;
+        font-size: 1rem;
         text-shadow: -3px 7px 10px rebeccapurple;
+        margin-top: 16rem;
     }
 
     .no-card-button 
     {
-        width: 14rem;
+        width: 11rem;
+        padding: 2rem;
+        border-radius: 41px;
+        border: none;
+        font-weight: bolder;
+        letter-spacing: 1px;
+    }
+
+    .no-card-button:hover
+    {
+        cursor: pointer;
+        background-color: red;
+        color: white;
+    }
+}
+
+@media (min-width : 700px) and (max-width : 1024px)
+{
+    .no-pokemon-card-holder
+    {
+        text-align: center;
+        font-size: 3rem;
+        text-shadow: -3px 7px 10px rebeccapurple;
+        margin-top: 25rem;
+    }
+
+    .no-card-button 
+    {
+        width: 23rem;
         padding: 3rem;
         border-radius: 41px;
         border: none;
         font-weight: bolder;
         letter-spacing: 1px;
+        font-size: 2rem;
+    }
+
+    .no-card-button:hover
+    {
+        cursor: pointer;
+        background-color: red;
+        color: white;
+    }
+}
+
+@media (min-width : 1025px) and (max-width : 1499px)
+{
+    .no-pokemon-card-holder
+    {
+        text-align: center;
+        font-size: 3rem;
+        text-shadow: -3px 7px 10px rebeccapurple;
+        margin-top: 17rem;
+    }
+
+    .no-card-button 
+    {
+        width: 23rem;
+        padding: 3rem;
+        border-radius: 41px;
+        border: none;
+        font-weight: bolder;
+        letter-spacing: 1px;
+        font-size: 2rem;
     }
 
     .no-card-button:hover
@@ -31,18 +90,22 @@
     .no-pokemon-card-holder
     {
         text-align: center;
-        font-size: 3rem;
-        text-shadow: -3px 7px 10px rebeccapurple;
+        font-size: 4rem;
+        text-shadow: -3px 7px 17px rebeccapurple;
+        margin: auto;
+        /* margin-top: 55rem; */
     }
 
     .no-card-button 
     {
-        width: 14rem;
+        width: 25rem;
         padding: 3rem;
         border-radius: 41px;
         border: none;
         font-weight: bolder;
         letter-spacing: 1px;
+        font-size: 2rem;
+        box-shadow: 9px 11px 12px #937070;
     }
 
     .no-card-button:hover

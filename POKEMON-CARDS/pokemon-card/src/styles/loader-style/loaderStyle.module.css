@@ -1,7 +1,45 @@
 
-
-.loader 
+@media (min-width : 300px) and (max-width : 500px)
 {
-    margin: auto;
-    top: 17rem;
+    .loader
+    {
+        position: fixed !important;
+        top: 43% !important;
+        left: 47% !important;
+        width: 0vw !important;
+        height: 9vh !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+}
+
+@media (min-width : 700px) and (max-width : 1024px)
+{
+    .loader
+    {
+        position: fixed !important;
+        top: 43% !important;
+        left: 47% !important;
+        width: 0vw !important;
+        height: 6vh !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+}
+
+@media (min-width : 1500px)
+{
+    .loader
+    {
+        position: fixed !important;
+        top: 43% !important;
+        left: 47% !important;
+        width: 0vw !important;
+        height: 10vh !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
 }

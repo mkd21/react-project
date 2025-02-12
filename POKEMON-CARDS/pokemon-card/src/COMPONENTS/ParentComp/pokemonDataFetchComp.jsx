@@ -30,6 +30,8 @@ function ParentComp()
     // this will manage the cards when user starts pressing the backspace 
     const [dataForFilter , updateDataForFilter] = useState(data);
 
+
+    // this function will control the search functionality 
     function showAvailablePokemon(receivedData)
     {   
         if(receivedData == "")
@@ -41,7 +43,7 @@ function ParentComp()
             const desiredPokemon = dataForFilter.filter( (iter) =>{
                 if(iter.name.toLowerCase().includes(receivedData)) 
                 {
-                    return iter;
+                    return true;
                 }
             })
             updateData(desiredPokemon);
@@ -63,13 +65,7 @@ function ParentComp()
     // this will be executed when reset button will be clicked
     function NoDesiredPokemonAvailable()
     {
-        const processData = async () =>{
-            const res = await fetchData();
-            updateData(res);
-            updateDataForFilter(res);
-            updateLoading(false);
-        }
-        processData();
+        updateData(dataForFilter);
     }
     
     // when data is being fetched 

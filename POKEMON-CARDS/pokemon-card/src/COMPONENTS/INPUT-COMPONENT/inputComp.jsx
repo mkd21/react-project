@@ -9,7 +9,6 @@ export const InputComponent = ({filterPokemon}) =>{
 
     const handleOnChange = (receivedText) =>{
         updateValue(receivedText);
-        // filterPokemon(currentValue);
     }
 
     useEffect( () =>{

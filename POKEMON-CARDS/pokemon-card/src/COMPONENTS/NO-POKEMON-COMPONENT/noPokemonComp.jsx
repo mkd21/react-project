@@ -1,6 +1,7 @@
 
 import NocardStyle from "../../styles/no-cards/no-pokemon-cards.module.css";
 
+// importing responsive styles 
 
 function NoPokemon({loadAllCards})
 {
